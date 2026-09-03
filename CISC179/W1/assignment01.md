@@ -5,9 +5,7 @@ this is a regular text
 
 ## this is assingnent 1 code
 
-```python
-print("hello word")
-# my comment
+
 
 <img width="2766" height="1732" alt="image" src="https://github.com/user-attachments/assets/c6297c01-186f-4524-8d7c-820658283b83" />
 
