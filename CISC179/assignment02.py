@@ -16,8 +16,7 @@ His acts being seven ages.""")
 # Predict the output
 print("127", "0", "0", "1", sep=".") #127.0.0.1
 
-# d and e questions: flush=False is used when you have to print thousands of lines of data in a faster way. flush=True the process automatically continues.
-
+#D and E quesstions flush=False buffer the output and flush when the line is terminated with a new line or flush is set to TRUE.
 #Literals
 print(5 + 2 - 2)
 # ___________5______
