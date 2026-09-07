@@ -148,16 +148,26 @@ averageDailyBalance = (netBalance * d1 - payment * d2) / d1
 #calculate iterest
 interest = averageDailyBalance * interest_rate
 #result
-print("The final interest is:", interest)
+print("The final interest rate is:", interest)
 
-#c. Distance Between Two Cars
+####c. Distance Between Two Cars
 # ask user for average speed
-speed1= float(input(" enter the average speed for car A"))
-speed2= float(input(" enter the average speed for car B"))
+speed1= float(input(" Enter the average speed for car A"))
+speed2= float(input(" Enter the average speed for car B"))
 #ask for hours
 hours = int(input("Enter the hours passed: "))
 #ask for minutes
 minutes=int(input("Enter the minutes passed: "))
+#convert time to hours
+total_hours= hours + (minutes/60.0)
+#calculate distance
+distance1= speed1*total_hours
+distance2= speed2*total_hours
+#calculate shortest distance using pythagorean theorem
+short_distance= math.sqrt((distance1**2)+ (distance2**2))
+#result
+print("The shorterst distance between the two cars is: ", short_distance) 
+
 
 #Troubleshooting
 
