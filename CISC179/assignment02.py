@@ -166,3 +166,6 @@ b. _var = 100# valid variable name staring with underscore,assigned to literal
 c. !var_1 = 200 # not valid variable cant start with special characters
 d. print = "print me"  # not valid cause it is missing the brackets ()
 e. False = 0 #reserve word that cannot be used as a variable
+
+
+https://docs.python.org/3/library/functions.html#input
