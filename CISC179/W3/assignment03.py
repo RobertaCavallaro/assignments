@@ -147,3 +147,52 @@ else:
 print("Good Bye")
 
 #7. one two
+
+
+#1. While loop
+#a. Please write Python code using a while loop to perform the following steps.
+n0 = int(input("enter a number: "))
+steps = 0
+
+while n0 != 1:
+    if n0 % 2 == 0:
+        n0 = n0 // 2
+    else:
+        n0 = 3 * n0 + 1      
+    print(n0)
+    steps += 1
+print("steps =", steps)
+
+#b. Write code that uses a while loop and runs indefinitely. Modify the same code to resolve the infinite loop issue.
+count = 30
+
+# Set condition to True for infinite
+while count <= 35:
+    print("The infinite number is:", count)
+    count += 30
+
+print("Finished!")
+
+#c. Write a program that takes two integers as input and asks the user to choose an arithmetic operation to perform with those numbers. At the end of the program, prompt the user with the question, "Do you want to continue?" If the user selects "Y" or "y," the program should restart; otherwise, it should exit and display the message, "Have a good day."
+count = "y"
+
+while count == "y" or count == "Y":
+    number1 = int(input("Enter one number: "))
+    number2 = int(input("Enter second number: "))
+    
+    operators = input("Pick one arthmetic operator between +, -,*, /: ")
+    
+    if operators == "+":
+        print("Output:", number1 + number2)
+    elif op == "-":
+        print("Output:", number1 - number2)
+    elif op == "*":
+        print("Output:", number1 * number2)
+    elif op == "/":
+        print("Output:", number1 / number2)
+        
+    count = input("Would you like to continue (Y/N): ")
+
+print("Have a good day!")
+
+
