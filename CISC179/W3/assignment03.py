@@ -22,3 +22,31 @@ if numero3 > largest_num:
 print("largest number is:", largest_num)
 
 
+#b. Identify multiple methods to determine if a number is even or odd. The user will input an integer, and the output will indicate whether it's "odd" or "even." The code should be organized into sections, with comments separating each part.
+# Ask user to insert an integer
+random_number = int(input("Enter an integer:"))
+#######################
+# Modulo Operator using %
+#######################
+if random_number % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
+
+#######################
+# Bitwise AND Operator (&)
+#######################
+if (random_number & 1) == 0:
+    print(" The number is even")
+else:
+    print("The number is odd")
+
+#######################
+# Integer, Division, and Multiplication
+#######################
+if (random_number // 2) * 2 == random_number:
+    print("The number is even")
+else:
+    print("The number is odd")
+
+
