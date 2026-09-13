@@ -195,4 +195,21 @@ while count == "y" or count == "Y":
 
 print("Have a good day!")
 
+#2.FOR LOOPS
+###########
+# Ask for an input and make it lowercases
+write = input("Enter your input: ")
+write = write.lower()
+
+count_letter = 0
+
+# Count letters 
+for char in write:
+    # Check if it is a letter from a to z
+    if char >= 'a' and char <= 'z':
+        count_letter += 1
+
+print("Total number of alphabets:", count_letter)
+print("Total number of distinct alphabets are: ")
+
 
