@@ -235,3 +235,103 @@ print("The .pop() method removed this number from the end:", popped_number)
 #reverse method
 my_list.reverse()
 print("First 5 items after using .reverse():", my_list[0:2])
+
+###########################
+#b. Suppose that you have a list of 10 items long. How might you move the last three items from the end of the list to the beginning, keeping them in the same order?
+#10 items list
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# We slice the list into two parts and add them together in reverse order
+new_list =list[-4:] + list[:-4]
+
+print("My list is :", list)
+print("New list is :", new_list)
+
+#### len([[1,2]] * 3) = 3
+
+####d. Create a list my-list-ten of 10 items that includes some duplicate entries. Then, generate a second list my-list-ten-mem that contains the memory addresses of the items from the list my-list-ten. Use Python to research and identify the unique and duplicate memory addresses.
+
+# Create a list of 10 items with some duplicates
+my_list_ten = [10, 25, 35, 25, 48, 25, 59, 60, 60, 71]
+
+# Generate a second list containing the memory addresses
+# id() function gets the memory address of each item on the list
+my_list_ten_mem = []
+
+for item in my_list_ten:
+    mem_address = id(item)
+    my_list_ten_mem.append(mem_address)
+
+print("List of items:    ", my_list_ten)
+print("List of mem addresses:   ", my_list_ten_mem)
+print("-" * 50)
+
+#Identify unique and duplicate memory addresses
+unique = []
+duplicate = []
+
+for address in my_list_ten_mem:
+    # Count how many times a mem address show in the list
+    mem_show = my_list_ten_mem.count(address)
+    
+    # If it only appears once, it is unique
+    if mem_show == 1:
+        unique.append(address)
+        
+    # If it shows more than once means is a duplicate
+    elif mem_show > 1 and address not in duplicate:
+        duplicate.append(address)
+
+print("Unique memory addresses:")
+for addr in unique:
+    print(addr)
+
+print("Duplicate memory addresses:")
+for addr in duplicate:
+    print(addr)
+#e. Delete the list my-list-ten created in the above step.
+del my_list_ten
+
+#g.What code could you use to get a copy y of that list in which you could change the elements without the side effect of changing the contents of x?
+import copy
+x = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# Create a copy
+y = copy.deepcopy(x)
+y[0][0] = 99
+print("x:", x) 
+print("y:", y) 
+
+####  H. yes it is possible, for loops and if conditions
+#### I. there are 9 spaces
+######## LIST OPERATIONS
+#append
+items = ["laptop", "book"]
+items.append("pen")
+
+print(items) 
+
+#extend 
+items = ["laptop", "book"]
+more_items = ["pencil", "watch"]
+items.extend(more_items)
+print(items) 
+
+#remove
+items = ["laptop", "book","pen"]
+items.remove("pen")
+print(items) 
+
+
+#sort alphabetically
+items = ["laptop", "book","pen","headphones","calculator"]
+items.sort()
+print(items) 
+
+#clear
+items = ["laptop", "book","pen","headphones","calculator"]
+items.clear()
+print(items) 
+
+
+
+
