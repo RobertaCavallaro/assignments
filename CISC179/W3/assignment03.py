@@ -212,4 +212,26 @@ for char in write:
 print("Total number of alphabets:", count_letter)
 print("Total number of distinct alphabets are: ")
 
+######a. Using a range function, generate a list of 100 integers and assign the list to my_list. Verify that the variable my_list data type is list. Use your favorite four methods and apply on the list. You can find the methods on Python Docs.
+# generate a list of 100 integers and assign the list to my_list.
+my_list = list(range(1, 100))
 
+# Verify that the variable my_list data type is list
+print("The data type is:", type(my_list))
+
+# Use your favorite four methods and apply on the list.
+# append method
+my_list.append(102)
+print("After .append(101), the last item is:", my_list[3])
+
+#insert method
+my_list.insert(0, 200)
+print("After .insert(0, 201), the first item is:", my_list[0])
+
+#pop method
+popped_number = my_list.pop()
+print("The .pop() method removed this number from the end:", popped_number)
+
+#reverse method
+my_list.reverse()
+print("First 5 items after using .reverse():", my_list[0:2])
