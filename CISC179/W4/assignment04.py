@@ -20,4 +20,14 @@ print("How many 3:", my_tuple.count(3))
 print("How many 4:", my_tuple.count(4))
 print("How many 5:", my_tuple.count(5))
 
+###1D.Proof that my_tuple in part c is different than the my_tuple in part d.
+
+my_tuple = (1, 2, 3, 4, 3, 2, 1, 2, 3, 5, 4, 3, 2, 1)
+
+print("tuple c ID is: ", id(my_tuple))
+
+my_tuple = my_tuple + my_tuple
+
+print("tuple d ID is: ", id(my_tuple))
+
 
