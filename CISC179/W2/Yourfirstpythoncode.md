@@ -9,4 +9,4 @@ print("""All the world's a stage, And all the men and women merely players: They
 Predict the output
 print("127", "0", "0", "1", sep=".") #127.0.0.1
 
-#D and E questions flush=False buffer the output and flush when the line is terminated with a new line or flush is set to TRUE. #Literals print(5 + 2 - 2)
+#D and E questions flush=False buffer the output and flush when the line is terminated with a new line or flush is set to TRUE. 
