@@ -30,4 +30,17 @@ my_tuple = my_tuple + my_tuple
 
 print("tuple d ID is: ", id(my_tuple))
 
+##1e. Explain why the following operations aren’t legal for the tuple. Answer without using the Python.
+x = (1,2,3,4) 
+x.append(1) #you can't add in tuple
+x[1] = "hello" # you can't replace in tuple
+del x[2] # you can't delete in tuple
+
+#2. Packing and unpacking tuples
+#2a. What is the data type of each variable? variables  from the right takes values of the left
+#(one, two, three, four) =  (1, 2, 3, 4)
+one=1
+two=2
+three=3
+four=4
 
