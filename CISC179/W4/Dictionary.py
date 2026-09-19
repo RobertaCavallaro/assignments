@@ -88,3 +88,41 @@ for word in words:
         word_count[word] = 1
 
 print(word_count)
+
+#2a. Change the content of d_copy and make sure the content does not affect the d_orig dictionary. Verify using the code.
+d_orig = {123: "Coconut"}
+
+d_copy = d_orig.copy()
+
+# Change d_copy
+d_copy[456] = "Apple"
+
+print("Original dictionary:")
+print(d_orig)
+
+print("Copy dictionary:")
+print(d_copy)
+
+
+#2b. If it changes the content of the original dictionary, then propose how can you solve this problem.
+d_orig = {123: "Coconut"}
+
+d_copy = d_orig.copy()
+
+d_copy[456] = "Apple"
+
+print("d_orig:", d_orig)
+print("d_copy:", d_copy)
+
+#2c. Write a code that generates the following error and explain why there is such an error. 
+# gives this error because [1,2,3] list can be changeable but dictionary doesnt allow to change 
+my_dict = {}
+
+my_list = [1, 2, 3]
+
+my_dict[my_list] = "Numbers"
+
+print(my_dict)
+
+
+
