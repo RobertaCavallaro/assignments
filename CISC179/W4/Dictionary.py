@@ -35,3 +35,34 @@ if ask == "Y" or ask == "y":
     ask = input("Do you want to continue (Y/N)? ")
 
 print(travel_list)
+############
+#Converting tuples into a dictionary
+###########
+new_dictionary = [
+    ('Name', 'Sarah Connor'),
+    ('Date of birth', '1 Jan 1980'),
+    ('Address', '1000 Black Mountain Drive', 92126), #too many elements
+    ('Name', 'Jim Hawkins')                          #duplicated keys
+]
+
+my_dictionary = {}
+
+for elements in new_dictionary:
+    if len(elements) != 2:
+        print("Too many elements", elements)
+        # insert correct values
+        keys = input("Input correct key: ")
+        elements = input("Input correct element: ")
+        
+    else:
+        keys = elements[0] 
+        elements = elements[1]
+        
+    # check for duplicates
+    if keys in my_dictionary:
+        print("already exists", elements)
+        keys = input("Insert a new element " + str(elements) + ": ")
+
+    my_dictionary[keys] = elements
+
+print(my_dictionary)
