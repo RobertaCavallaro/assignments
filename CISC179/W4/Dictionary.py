@@ -66,3 +66,25 @@ for elements in new_dictionary:
     my_dictionary[keys] = elements
 
 print(my_dictionary)
+
+
+# 1e. Count the number of words using a dictionary
+
+text = """The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia. It has a powerful, muscular body with a large head and paws, a long tail and orange fur with black, mostly vertical stripes. It is traditionally classified into nine recent subspecies, though some recognise only two subspecies, mainland Asian tigers and the island tigers of the Sunda Islands."""
+
+
+# Convert text into words
+words = text.split()
+
+# Create a new dictionary
+word_count = {}
+
+#Counting loop
+for word in words:
+    
+    if word in word_count:
+        word_count[word] = word_count[word] + 1
+    else:
+        word_count[word] = 1
+
+print(word_count)
