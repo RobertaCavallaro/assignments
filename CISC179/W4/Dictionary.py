@@ -25,13 +25,13 @@ travel_list[new_month] = new_city
 ask = input("Do you want to continue (Y/N)? ")
 
 #if they say yes show the new outputs
-if answer == "Y" or answer == "y":
+if ask == "Y" or ask == "y":
     new_month2 = input("Insert month: ")
     new_city2 = input("insert city: ")
     
     # add second input to dictionary
     travel_list[new_month2] = new_city2
     
-    answer = input("Do you want to continue (Y/N)? ")
+    ask = input("Do you want to continue (Y/N)? ")
 
 print(travel_list)
