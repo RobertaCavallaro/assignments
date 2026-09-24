@@ -43,6 +43,7 @@ if __name__ == "__main__":
     
     # Verify records
     print("Verify records")
-```
+
     for record_id, details in patient.items():
         print("Record {record_id}: {details}")
+```
